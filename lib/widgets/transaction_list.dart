@@ -18,7 +18,18 @@ class TransactionList extends StatelessWidget {
                 Text(
                   'no transactions',
                   style: Theme.of(context).textTheme.title,
-                )
+                ),
+                SizedBox(
+                  // gap between text & container
+                  height: 20,
+                ),
+                Container(
+                  height: 200,
+                  child: Image.asset(
+                    'assets/images/sleeping.jpg',
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ],
             )
           : ListView.builder(
